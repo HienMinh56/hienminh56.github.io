@@ -84,7 +84,7 @@ ul {
     box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
 }
 
-#rainbow-text {
+.rainbow-text {
     color: #0ef;
     animation: colorful 6s infinite;
 }
@@ -100,16 +100,16 @@ ul {
     width: .60rem;
     background-color: var(--text-black-900);
     border-radius: .5rem;
-  }
-  
-  ::-webkit-scrollbar-thumb {
+}
+
+::-webkit-scrollbar-thumb {
     background-color: var(--bg-black-50);
     border-radius: .5rem;
-  }
-  
-  ::-webkit-scrollbar-thumb:hover {
+}
+
+::-webkit-scrollbar-thumb:hover {
     background-color: var(--skin-color);
-  }
+}
 
 /* =============== ASIDE(NAVBAR) ===============*/
 .aside {
@@ -922,7 +922,9 @@ h3.my-profession {
     .about .about__content .education, */
     .contact .contact__info-item,
     .about .about__content .skills,
-    .about .about__content .personal__info {
+    .about .about__content .personal__info,
+    .info .page__content .skills,
+    .info .page__content .supporter__info {
         flex: 0 0 100%;
         max-width: 100%;
     }
