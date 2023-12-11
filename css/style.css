@@ -655,7 +655,79 @@ h3.my-profession {
 } */
 
 /* =============== PROJECTS ===============*/
+main {
+    width: 95%;
+    margin: 0 1rem;
+    --gap: 1rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: space-between;
+    height: fit-content;
+    gap: var(--gap);
+}
 
+.project {
+    transition: transform .2s linear, background-color .2s linear;
+    border-radius: 16px;
+    background: #defa;
+    overflow: hidden;
+}
+
+.project:hover {
+    background-color: #defc;
+}
+
+.project:active {
+    transform: perspective(300px) translateZ(-10px);
+}
+
+.project a {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    box-sizing: border-box;
+    padding: 15px 20px;
+    width: 100%;
+    height: 100%;
+    color: #000;
+}
+
+.project b {
+    color: #06b;
+    font-size: 1.1em;
+}
+
+.project .meta {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+    color: #000b;
+}
+
+.project .meta svg {
+    fill: #000b;
+}
+
+.project .meta div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.project .lang {
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.project .lang .color {
+    margin-right: .1em;
+    border-radius: 50%;
+    width: .6em;
+    height: .6em;
+}
 
 /* =============== GADGETS ===============*/
 
@@ -910,6 +982,12 @@ h3.my-profession {
 
     .home .home__img {
         display: none;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 }
 
