@@ -1027,12 +1027,7 @@ h3.my-profession {
 }
 
 .project:hover {
-    /* background-color: #defc; */
     filter: drop-shadow(1px 1px 20px);
-}
-
-.project:active {
-    transform: perspective(300px) translateZ(-10px);
 }
 
 .project a {
@@ -1094,17 +1089,6 @@ h3.my-profession {
 }
 
 /* =============== GADGETS ===============*/
-.gadgets main {
-    width: 95%;
-    margin: 0 1rem;
-    --gap: 1.5rem;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    justify-content: space-between;
-    height: fit-content;
-    gap: var(--gap);
-}
-
 .widget {
     --square-size: calc((((min(1280px, 100vw - 100px) - (60px * 11)) / 12) * 8 + (60px - var(--gap)) * 7) / 8);
     --c: min(var(--columns, 2), var(--template-columns));
@@ -1113,9 +1097,14 @@ h3.my-profession {
     grid-column: span var(--c);
     transition: transform .2s linear, background-color .2s linear;
     border-radius: 24px;
-    background-color: #defa;
+    background: var(--text-black-900);
     height: calc(var(--square-size) * var(--r) + var(--gap) * (var(--r) - 1));
     overflow: var(--square-size);
+    margin: 0 1rem;
+}
+
+.widget:hover {
+    filter: drop-shadow(1px 1px 20px);
 }
 
 .widget .content {
@@ -1147,7 +1136,8 @@ h3.my-profession {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    padding: 24px; /* Default: 24px */
+    padding: 24px;
+    /* Default: 24px */
     width: 100%;
     height: 100%;
 }
@@ -1159,7 +1149,7 @@ h3.my-profession {
 #discord .meta {
     margin-top: 0;
     margin-left: 14px;
-    color: var(--text-black-900);
+    color: var(--bg-black-900);
 }
 
 #dot {
@@ -1174,11 +1164,11 @@ h3.my-profession {
     display: flex;
     flex-direction: row;
     margin-top: 10px;
-    white-space: normal;
+    white-space: wrap;
 }
 
 #discord .rpc .meta {
-    color: var(--text-black-900);
+    color: var(--bg-black-900);
 }
 
 #large_image {
@@ -1432,6 +1422,12 @@ h3.my-profession {
     }
 }
 
+/* @media (width < 1300px) {
+    .widget {
+        --square-size: calc((min(950px, 100vw - 100px) - (var(--gap) * 7)) / 8);
+    }
+} */
+
 @media (max-width:991px) {
 
     /* .telejson .telejson-item,
@@ -1455,11 +1451,13 @@ h3.my-profession {
         flex-direction: column;
         justify-content: space-between;
     }
-
-    .gadget {
-        display: none;
-    }
 }
+
+/* @media (width < 880px) {
+    .widget {
+        --square-size: calc((max(320px, min(480px, calc(100vw - 50px))) - (var(--gap) * 3)) / 4);
+    }
+} */
 
 @media (max-width:767px) {
 
@@ -1481,8 +1479,4 @@ h3.my-profession {
         flex: 0 0 20%;
         max-width: 100%;
     } */
-
-    .gadget {
-        display: none;
-    }
 }

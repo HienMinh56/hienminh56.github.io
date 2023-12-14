@@ -13,7 +13,7 @@
     <!-- ======================== CSS ======================== -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style-switcher.css">
-    <link rel="stylesheet" href="css/skin/color3.css" class="alternate-style" title="color-3" enabled>
+    <link rel="stylesheet" href="css/skin/color1.css" class="alternate-style" title="color-1" enabled>
     <link rel="stylesheet" href="css/skin/color1.css" class="alternate-style" title="color-1" disabled>
     <link rel="stylesheet" href="css/skin/color2.css" class="alternate-style" title="color-2" disabled>
     <link rel="stylesheet" href="css/skin/color3.css" class="alternate-style" title="color-3" disabled>
@@ -275,62 +275,63 @@
                         </div>
                     </div>
                     <div class="row">
-                        <main>
-                            <div class="widget js">
-                                <div id="discord">
-                                    <div class="content">
-                                        <div class="icon">
-                                            <img src="" id="avatar" alt="avatar" draggable="false">
-                                        </div>
-                                        <div class="meta">
-                                            <b id="name"></b>
-                                            <p>
-                                                <span id="dot"></span>
-                                                <span id="status"></span>
-                                                <b id="activity"></b>
-                                            </p>
-                                        </div>
+                        <div class="widget">
+                            <div id="discord">
+                                <div class="content">
+                                    <div class="icon">
+                                        <img src="" id="avatar" alt="avatar" draggable="false">
                                     </div>
-                                    <div class="rpc">
-                                        <div>
-                                            <div id="large_image"></div>
-                                            <div id="small_image"></div>
-                                        </div>
-                                        <div class="meta">
-                                            <div id="details"></div>
-                                            <div id="state"></div>
-                                            <div id="timestamp"></div>
-                                        </div>
+                                    <div class="meta">
+                                        <b id="name"></b>
+                                        <p>
+                                            <span id="dot"></span>
+                                            <span id="status"></span>
+                                            <b id="activity"></b>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="rpc">
+                                    <div>
+                                        <div id="large_image"></div>
+                                        <div id="small_image"></div>
+                                    </div>
+                                    <div class="meta">
+                                        <div id="details"></div>
+                                        <div id="state"></div>
+                                        <div id="timestamp"></div>
                                     </div>
                                 </div>
                             </div>
+                        </div>
 
-                            <div class="widget js" style="display: none;">
-                                <div id="clock">
-                                    <div class="face">
-                                        <svg viewBox="0 0 500 500">
-                                            <path d="M469.881,324.15a90.631,90.631,0,0,1,7.616-28.425l15.88-32.267c3.642-7.4,3.642-19.514,0-26.916L477.5,204.275a90.631,90.631,0,0,1-7.616-28.425L467.5,139.967c-.547-8.232-6.6-18.722-13.459-23.311l-29.885-20a90.643,90.643,0,0,1-20.809-20.809l-20-29.885C378.755,39.1,368.265,33.047,360.033,32.5L324.15,30.119A90.631,90.631,0,0,1,295.725,22.5L263.458,6.623c-7.4-3.642-19.514-3.642-26.916,0L204.275,22.5a90.631,90.631,0,0,1-28.425,7.616L139.967,32.5c-8.232.547-18.722,6.6-23.311,13.459l-20,29.885A90.643,90.643,0,0,1,75.844,96.653l-29.885,20C39.1,121.245,33.047,131.735,32.5,139.967L30.119,175.85A90.631,90.631,0,0,1,22.5,204.275L6.623,236.542c-3.642,7.4-3.642,19.514,0,26.916L22.5,295.725a90.631,90.631,0,0,1,7.616,28.425L32.5,360.033c.546,8.232,6.6,18.722,13.458,23.311l29.885,20a90.643,90.643,0,0,1,20.809,20.809l20,29.885c4.589,6.856,15.079,12.912,23.311,13.459l35.883,2.381a90.631,90.631,0,0,1,28.425,7.616l32.267,15.88c7.4,3.642,19.514,3.642,26.916,0l32.267-15.88a90.631,90.631,0,0,1,28.425-7.616l35.883-2.381c8.232-.547,18.722-6.6,23.311-13.459l20-29.885a90.643,90.643,0,0,1,20.809-20.809l29.885-20c6.856-4.589,12.912-15.079,13.458-23.311Z"></path>
-                                        </svg>
-                                        <div id="hour-hand"></div>
-                                        <div id="minute-hand"></div>
-                                        <div id="second-hand"></div>
+                        <div class="widget js" style="display: none;">
+                            <div id="clock">
+                                <div class="face">
+                                    <svg viewBox="0 0 500 500">
+                                        <path
+                                            d="M469.881,324.15a90.631,90.631,0,0,1,7.616-28.425l15.88-32.267c3.642-7.4,3.642-19.514,0-26.916L477.5,204.275a90.631,90.631,0,0,1-7.616-28.425L467.5,139.967c-.547-8.232-6.6-18.722-13.459-23.311l-29.885-20a90.643,90.643,0,0,1-20.809-20.809l-20-29.885C378.755,39.1,368.265,33.047,360.033,32.5L324.15,30.119A90.631,90.631,0,0,1,295.725,22.5L263.458,6.623c-7.4-3.642-19.514-3.642-26.916,0L204.275,22.5a90.631,90.631,0,0,1-28.425,7.616L139.967,32.5c-8.232.547-18.722,6.6-23.311,13.459l-20,29.885A90.643,90.643,0,0,1,75.844,96.653l-29.885,20C39.1,121.245,33.047,131.735,32.5,139.967L30.119,175.85A90.631,90.631,0,0,1,22.5,204.275L6.623,236.542c-3.642,7.4-3.642,19.514,0,26.916L22.5,295.725a90.631,90.631,0,0,1,7.616,28.425L32.5,360.033c.546,8.232,6.6,18.722,13.458,23.311l29.885,20a90.643,90.643,0,0,1,20.809,20.809l20,29.885c4.589,6.856,15.079,12.912,23.311,13.459l35.883,2.381a90.631,90.631,0,0,1,28.425,7.616l32.267,15.88c7.4,3.642,19.514,3.642,26.916,0l32.267-15.88a90.631,90.631,0,0,1,28.425-7.616l35.883-2.381c8.232-.547,18.722-6.6,23.311-13.459l20-29.885a90.643,90.643,0,0,1,20.809-20.809l29.885-20c6.856-4.589,12.912-15.079,13.458-23.311Z">
+                                        </path>
+                                    </svg>
+                                    <div id="hour-hand"></div>
+                                    <div id="minute-hand"></div>
+                                    <div id="second-hand"></div>
+                                </div>
+                                <div>
+                                    <div class="date">
+                                        <b id="date"></b>
+                                        <span>ICT</span>
+                                    </div>
+                                    <div class="time">
+                                        <span id="hour"></span><span>:</span><span
+                                            id="minute"></span><span>:</span><span id="second"></span>
                                     </div>
                                     <div>
-                                        <div class="date">
-                                            <b id="date"></b>
-                                            <span>ICT</span>
-                                        </div>
-                                        <div class="time">
-                                            <span id="hour"></span><span>:</span><span id="minute"></span><span>:</span><span id="second"></span>
-                                        </div>
-                                        <div>
-                                            <span id="timezone-diff"></span>
-                                            <span id="utc-offset"></span>
-                                        </div>
+                                        <span id="timezone-diff"></span>
+                                        <span id="utc-offset"></span>
                                     </div>
                                 </div>
                             </div>
-                        </main>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -443,22 +444,22 @@
                                         <div class="skill__item padd-15">
                                             <h5>HTML</h5>
                                             <div class="progress">
-                                                <div class="progress-in" style="width: 60%;"></div>
-                                                <div class="skill-percent">60%</div>
+                                                <div class="progress-in" style="width: 41%;"></div>
+                                                <div class="skill-percent">41%</div>
                                             </div>
                                         </div>
                                         <div class="skill__item padd-15">
                                             <h5>CSS</h5>
                                             <div class="progress">
-                                                <div class="progress-in" style="width: 31%;"></div>
-                                                <div class="skill-percent">31%</div>
+                                                <div class="progress-in" style="width: 39%;"></div>
+                                                <div class="skill-percent">39%</div>
                                             </div>
                                         </div>
                                         <div class="skill__item padd-15">
                                             <h5>JavaScript</h5>
                                             <div class="progress">
-                                                <div class="progress-in" style="width: 9%;"></div>
-                                                <div class="skill-percent">9%</div>
+                                                <div class="progress-in" style="width: 20%;"></div>
+                                                <div class="skill-percent">20%</div>
                                             </div>
                                         </div>
                                     </div>
