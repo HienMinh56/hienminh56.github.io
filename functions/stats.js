@@ -30,8 +30,8 @@ export async function onRequestGet({ env, request, waitUntil }) {
 async function getStats(env) {
     const query = `{
         a: repository(owner: "HienMinh56", name: "SellingDrawingCoure ") { stargazers { totalCount } forks { totalCount } }
-        b: repository(owner: "HienMinh56", name: "debloat-premid") { stargazers { totalCount } forks { totalCount } }
-        c: repository(owner: "HienMinh56", name: "loli") { stargazers { totalCount } forks { totalCount } }
+        b: repository(owner: "HienMinh56", name: "BookStoreManagement-C-Sharp") { stargazers { totalCount } forks { totalCount } }
+        c: repository(owner: "HienMinh56", name: "NodeJS-ExpressJS-Handlebars") { stargazers { totalCount } forks { totalCount } }
 
         z: user(login: "HienMinh56") {
             repositories(first: 100, ownerAffiliations: OWNER) {
