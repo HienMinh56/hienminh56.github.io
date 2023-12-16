@@ -918,100 +918,11 @@ h3.my-profession {
     line-height: 40px;
 }
 
-/* .about .about__content .education,
-.about .about__content .experience {
-    flex: 0 0 50%;
-    max-width: 50%;
-    margin-top: 30px;
-}
-
-.about .about__content h3.title {
-    font-size: 24px;
-    margin-bottom: 30px;
-    font-weight: 700;
-    color: var(--text-black-900);
-}
-
-.about .about__content .timeline-box {
-    flex: 0 0 100%;
-    max-width: 100%;
-}
-
-.about .about__content .timeline {
-    background-color: var(--bg-black-100);
-    padding: 30px 15px;
-    border: 1px solid var(--bg-black-50);
-    border-radius: 10px;
-    width: 100%;
-    position: relative;
-}
-
-.about .about__content .timeline .timeline-item {
-    position: relative;
-    padding-left: 37px;
-    padding-bottom: 50px;
-}
-
-.about .about__content .timeline .timeline-item:last-child {
-    padding-bottom: 0;
-}
-
-.about .about__content .timeline .timeline-item::before {
-    content: '';
-    position: absolute;
-    width: 1px;
-    height: 100%;
-    left: 7px;
-    top: 0;
-    background-color: var(--skin-color);
-}
-
-.about .about__content .timeline .circle-dot {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 15px;
-    width: 15px;
-    border-radius: 50%;
-    background-color: var(--skin-color);
-}
-
-.about .about__content .timeline .timeline-date {
-    font-weight: 400;
-    font-size: 14px;
-    margin-bottom: 12px;
-    color: var(--text-black-700);
-}
-
-.about .about__content .timeline .timeline-date .fa {
-    margin-right: 5px;
-}
-
-.about .about__content .timeline .timeline-title {
-    font-weight: 700;
-    font-size: 18px;
-    margin-bottom: 15px;
-    text-transform: capitalize;
-    color: var(--text-black-900);
-}
-
-.about .about__content .timeline .timeline-text {
-    font-size: 16px;
-    line-height: 25px;
-    text-align: justify;
-    color: var(--text-black-700);
-}
-
-.iframe {
-    border: none;
-    margin-top: 20px;
-} */
-
 /* =============== PROJECTS ===============*/
 .projects main {
     width: 95%;
     margin: 0 1rem;
-    --gap: 1.5rem;
+    --gap: 1.5em;
     display: grid;
     grid-template-columns: 50% 50%;
     justify-content: space-between;
@@ -1045,6 +956,7 @@ h3.my-profession {
 .project b {
     color: var(--skin-color);
     font-size: 1.1em;
+    white-space: wrap;
 }
 
 .project p {
@@ -1089,18 +1001,21 @@ h3.my-profession {
 }
 
 /* =============== GADGETS ===============*/
+.gadgets main {
+    width: 95%;
+    margin: 0 1rem;
+    --gap: 1.5rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: space-between;
+    height: fit-content;
+    gap: var(--gap);
+}
+
 .widget {
-    --square-size: calc((((min(1280px, 100vw - 100px) - (60px * 11)) / 12) * 8 + (60px - var(--gap)) * 7) / 8);
-    --c: min(var(--columns, 2), var(--template-columns));
-    --r: var(--rows, 2);
-    grid-row: span var(--r);
-    grid-column: span var(--c);
     transition: transform .2s linear, background-color .2s linear;
     border-radius: 24px;
     background: var(--text-black-900);
-    height: calc(var(--square-size) * var(--r) + var(--gap) * (var(--r) - 1));
-    overflow: var(--square-size);
-    margin: 0 1rem;
 }
 
 .widget:hover {
@@ -1188,6 +1103,93 @@ h3.my-profession {
     height: 30px;
 }
 
+#clock {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    box-sizing: border-box;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+#clock .face {
+    position: relative;
+    aspect-ratio: 1/1;
+    height: 100%;
+}
+
+#clock .face div,
+#clock .face svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#clock .face svg {
+    fill: #adf;
+}
+
+#hour-hand::before,
+#minute-hand::before,
+#second-hand::before {
+    position: absolute;
+    bottom: 46%;
+    left: 46%;
+    border-radius: 50px;
+    background-color: var(--color);
+    width: 8%;
+    height: var(--h);
+    content: '';
+}
+
+#hour-hand {
+    --h: 30%;
+    --color: #36b;
+}
+
+#minute-hand {
+    --h: 40%;
+    --color: #48d;
+}
+
+#second-hand {
+    --h: 8%;
+    --color: #48d;
+    transition: transform .2s;
+}
+
+#second-hand::before {
+    top: 7%;
+}
+
+#clock .date {
+    color: var(--bg-black-900);
+    font-size: 1.2em;
+}
+
+#clock .time {
+    min-width: 7ch;
+    font-weight: bold;
+    font-size: 2.5em;
+    color: var(--bg-black-900);
+}
+
+/* #hour~span,
+#minute~span {
+    color: var(--bg-black-900);
+} */
+
+#timezone-diff {
+    color: var(--bg-black-900);
+}
+
+#utc-offset {
+    color: var(--bg-black-900);
+}
+
 /* =============== CONTACT ===============*/
 /* .contact {
     overflow: hidden;
@@ -1240,50 +1242,6 @@ h3.my-profession {
     color: var(--text-black-700);
     font-weight: 400;
 }
-
-/* .contact .contact-form {
-    flex: 0 0 100%;
-    max-width: 100%;
-}
-
-.contact .contact-form .col-6 {
-    flex: 0 0 50%;
-    max-width: 50%;
-}
-
-.contact .contact-form .col-12 {
-    flex: 0 0 100%;
-    max-width: 1000%;
-}
-
-.contact .contact-form .form-item {
-    margin-bottom: 30px;
-}
-
-.contact .contact-form .form-item .form-control {
-    width: 100%;
-    height: 50px;
-    border-radius: 25px;
-    background: var(--bg-black-100);
-    border: 1px solid var(--bg-black-50);
-    padding: 10px 25px;
-    font-size: 16px;
-    color: var(--text-black-700);
-    transition: all 0.3s ease;
-}
-
-.contact .contact-form .form-item .form-control:focus {
-    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
-}
-
-.contact .contact-form .form-item textarea.form-control {
-    height: 140px;
-}
-
-.contact .contact-form .btn {
-    height: 50px;
-    padding: 0 50px;
-} */
 
 /* =============== INFO ===============*/
 .info .page__content {
@@ -1422,16 +1380,7 @@ h3.my-profession {
     }
 }
 
-/* @media (width < 1300px) {
-    .widget {
-        --square-size: calc((min(950px, 100vw - 100px) - (var(--gap) * 7)) / 8);
-    }
-} */
-
 @media (max-width:991px) {
-
-    /* .telejson .telejson-item,
-    .service .service-item, */
     .contact .contact__info-item {
         flex: 0 0 20%;
         max-width: 50%;
@@ -1446,26 +1395,16 @@ h3.my-profession {
         display: none;
     }
 
-    .projects main {
+    .projects main,
+    .gadgets main {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
 }
 
-/* @media (width < 880px) {
-    .widget {
-        --square-size: calc((max(320px, min(480px, calc(100vw - 50px))) - (var(--gap) * 3)) / 4);
-    }
-} */
-
 @media (max-width:767px) {
 
-    /* .contact .contact-form .col-6,
-    .telejson .telejson-item,
-    .service .service-item,
-    .about .about__content .experience,
-    .about .about__content .education, */
     .contact .contact__info-item,
     .about .about__content .skills,
     .about .about__content .personal__info,
@@ -1474,9 +1413,4 @@ h3.my-profession {
         flex: 0 0 100%;
         max-width: 100%;
     }
-
-    /* .telejson .telejson-item{
-        flex: 0 0 20%;
-        max-width: 100%;
-    } */
 }
