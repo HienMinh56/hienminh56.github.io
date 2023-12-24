@@ -23,6 +23,13 @@ body {
     overflow: hidden;
 }
 
+#snowflakes-container {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+
 * {
     margin: 0;
     padding: 0;

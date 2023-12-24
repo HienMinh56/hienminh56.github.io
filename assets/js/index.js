@@ -111,3 +111,20 @@ function setRpcTimestamp(timestamp) {
     const format = n => n.toString().padStart(2, '0');
     update('#timestamp', `${hour ? `${format(hour)}:` : ''}${format(minute)}:${format(second)} ${timestamp > Date.now() ? 'left' : 'elapsed'}`);
 }
+
+var snowflakes = new Snowflakes({
+    color: '#25D1D1', /* Default: "#5ECDEF" */
+    container: document.querySelector('#snowflakes-container'), // Default: document.body
+    count: 100, // 100 snowflakes. Default: 50
+    minOpacity: 0.6, // From 0 to 1. Default: 0.6
+    maxOpacity: 1, // From 0 to 1. Default: 1
+    minSize: 10, // Default: 10
+    maxSize: 35, // Default: 25
+    rotation: true, // Default: true
+    speed: 0.7, // The property affects the speed of falling. Default: 1
+    wind: false, // Without wind. Default: true
+    width: 500, // Default: width of container
+    height: 250, // Default: height of container
+    zIndex: 100, // Default: 9999,
+    autoResize: true // Default: true
+});
