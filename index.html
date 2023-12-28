@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fancy</title>
+    <link rel="icon" href="https://media.tenor.com/IEEkg1E0WWEAAAAC/silverwolf-keyboard-mashing.gif" />
+    <!-- ==================== Import CSS ===================== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- ======================== CSS ======================== -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style-switcher.css">
+    <link rel="stylesheet" href="assets/css/skin/color1.css" class="alternate-style" title="color-1" enabled>
+    <link rel="stylesheet" href="assets/css/skin/color1.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="assets/css/skin/color2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="assets/css/skin/color3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="assets/css/skin/color4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="assets/css/skin/color5.css" class="alternate-style" title="color-5" disabled>
+</head>
+
+<body id="snowflakes-container">
+    <!-- ======================= MAIN BODY ====================== -->
+    <div class="main__container">
+        <!-- ======================== NAVBAR(ASIDE) ======================== -->
+        <div class="aside glitch">
+            <div class="logo" data-text="FANCY">
+                <a href="#">FANCY<span></span></a>
+            </div>
+            <div class="nav-toggler">
+                <span></span>
+            </div>
+            <ul class="nav">
+                <li><a href="#home" class="active"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="#about"><i class="fa fa-user"></i>About</a></li>
+                <li><a href="#projects"><i class="fa-solid fa-folder-open"></i>Projects</a></li>
+                <li><a href="#gadgets"><i class="fa-solid fa-gears"></i>Gadgets</a></li>
+                <li><a href="#contact"><i class="fa-solid fa-layer-group"></i>Contact</a></li>
+                <li><a href="#info"><i class="fa-solid fa-circle-info"></i>Info</a></li>
+            </ul>
+        </div>
+
+        <!-- ======================== PAGES(SECTION) ======================= -->
+        <div class="main__content">
+            <!-- ======================== HOME ========================= -->
+            <section class="home section active" id="home">
+                <marquee class="marquee">Welcome to website.</marquee>
+                <div class="container">
+                    <div class="row">
+                        <div class="home__info padd-15">
+                            <h3 class="hello">Oh, <span class="name">It's such an honor to have you pay a visit.</span>
+                            </h3>
+                            <h3 class="my-profession">Hello. I'm a/an <span class="typing"></span></h3>
+                            <h4>This is the website I use to introduce myself and store some gadgets I found and coded.
+                            </h4>
+                            <h4><i>By the way you can call me FANCY.</i></h4>
+                            <p>FAVORITE QUOTE: I close my eyes, then I drift away, into the magic night I softly say. A
+                                silent prayer, like dreamers do, then I fall asleep to dream my dreams of you. - Roy
+                                Orbison</p>
+                            <a href="https://discord.gg/Y3VtAnCHx8" target="_blank" data-section-index="5"
+                                class="btn hire-me">Discord Server</a>
+                        </div>
+                        <div class="home__img padd-15">
+                            <img src="images/banner.gif" alt="banner">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ======================== ABOUT ======================== -->
+            <section class="about section" id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="section__title padd-15">
+                            <h2>About</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="about__content padd-15">
+                            <div class="row">
+                                <div class="about__text padd-15">
+                                    <h3>I'm a <span>third-year student</span></h3>
+                                    <p>Just a dreamer in this big world.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="personal__info padd-15">
+                                    <div class="row">
+                                        <div class="info__item padd-15">
+                                            <p>FullName: <span>Doan Le Hien Minh</span></p>
+                                        </div>
+                                        <div class="info__item padd-15">
+                                            <p>Birthday: <span>5/6</span></p>
+                                        </div>
+                                        <div class="info__item padd-15">
+                                            <p>Gender: <span>Male</span></p>
+                                        </div>
+                                        <div class="info__item padd-15">
+                                            <p>Home Town: <span>Ho Chi Minh City</span></p>
+                                        </div>
+                                        <div class="info__item padd-15">
+                                            <p>Hobby: <span>Anime | Music | Game</span></p>
+                                        </div>
+                                        <div class="info__item padd-15">
+                                            <p>Game <i class="fa-solid fa-heart"></i>: <span><a
+                                                        href="https://genshin.hoyoverse.com/vi/home" target="_blank"
+                                                        class="rainbow-text">Genshin Impact</a></span></p>
+                                        </div>
+                                        <div class="info__item padd-15">
+                                            <p>Music <i class="fa-solid fa-heart"></i>: <span><a
+                                                        href="https://www.youtube.com/watch?v=nqzwxrx4Fn4"
+                                                        target="_blank" class="rainbow-text">One last kiss x Slow
+                                                        down</a></span></p>
+                                        </div>
+                                        <div class="info__item padd-15">
+                                            <p>Idol <i class="fa-solid fa-heart"></i>: <span><a
+                                                        href="https://www.youtube.com/@TrucTiepGameVN" target="_blank"
+                                                        class="rainbow-text">TrucTiepGame</a> | <a
+                                                        href="https://www.youtube.com/@codehal" target="_blank"
+                                                        class="rainbow-text">CodeHal</a></span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skills padd-15">
+                                    <div class="row">
+                                        <div class="skill__item padd-15">
+                                            <h5>HTML</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 87%;"></div>
+                                                <div class="skill-percent">87%</div>
+                                            </div>
+                                        </div>
+                                        <div class="skill__item padd-15">
+                                            <h5>CSS</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 80%;"></div>
+                                                <div class="skill-percent">80%</div>
+                                            </div>
+                                        </div>
+                                        <div class="skill__item padd-15">
+                                            <h5>JavaScript</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 59%;"></div>
+                                                <div class="skill-percent">59%</div>
+                                            </div>
+                                        </div>
+                                        <div class="skill__item padd-15">
+                                            <h5>C#</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 65%;"></div>
+                                                <div class="skill-percent">65%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ======================== PROJECTS ===================== -->
+            <section class="projects section" id="projects">
+                <div class="container">
+                    <div class="row">
+                        <div class="section__title padd-15">
+                            <h2>Projects</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <main>
+                            <div class="project">
+                                <a href="https://github.com/HienMinh56/SellingDrawingCoure" target="_blank">
+                                    <b>SellingDrawingCoure</b>
+                                    <p>My first React project</p>
+                                    <div class="meta">
+                                        <div>
+                                            <svg fill="currentColor" viewBox="0 0 16 16" height="1em" width="1em">
+                                                <path
+                                                    d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25">
+                                                </path>
+                                            </svg>
+                                            <span class="star">-</span>
+                                        </div>
+                                        <div>
+                                            <svg fill="currentColor" viewBox="0 0 16 16" height="1em" width="1em">
+                                                <path
+                                                    d="M5 5.372a2.25 2.25 0 1 0-1.5 0v.878A2.25 2.25 0 0 0 5.75 8.5h1.5v2.128a2.251 2.251 0 1 0 1.5 0V8.5h1.5a2.25 2.25 0 0 0 2.25-2.25v-.878a2.25 2.25 0 1 0-1.5 0v.878a.75.75 0 0 1-.75.75h-4.5A.75.75 0 0 1 5 6.25v-.878">
+                                                </path>
+                                            </svg>
+                                            <span class="fork">-</span>
+                                        </div>
+                                        <div class="lang">
+                                            <div class="color" style="background-color: #f1e05a;"></div>
+                                            ReactJS
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="project">
+                                <a href="https://github.com/HienMinh56/BookStoreManagement-C-Sharp" target="_blank">
+                                    <b>BookStoreManagement-C-Sharp</b>
+                                    <p>My first C# project</p>
+                                    <div class="meta">
+                                        <div>
+                                            <svg fill="currentColor" viewBox="0 0 16 16" height="1em" width="1em">
+                                                <path
+                                                    d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25">
+                                                </path>
+                                            </svg>
+                                            <span class="star">-</span>
+                                        </div>
+                                        <div>
+                                            <svg fill="currentColor" viewBox="0 0 16 16" height="1em" width="1em">
+                                                <path
+                                                    d="M5 5.372a2.25 2.25 0 1 0-1.5 0v.878A2.25 2.25 0 0 0 5.75 8.5h1.5v2.128a2.251 2.251 0 1 0 1.5 0V8.5h1.5a2.25 2.25 0 0 0 2.25-2.25v-.878a2.25 2.25 0 1 0-1.5 0v.878a.75.75 0 0 1-.75.75h-4.5A.75.75 0 0 1 5 6.25v-.878">
+                                                </path>
+                                            </svg>
+                                            <span class="fork">-</span>
+                                        </div>
+                                        <div class="lang">
+                                            <div class="color" style="background-color: #178600;"></div>
+                                            C#
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="project">
+                                <a href="https://github.com/HienMinh56/NodeJS-ExpressJS-Handlebars" target="_blank">
+                                    <b>NodeJS-ExpressJS-Handlebars</b>
+                                    <p>My ongoing project about studying ExpressJS</p>
+                                    <div class="meta">
+                                        <div>
+                                            <svg fill="currentColor" viewBox="0 0 16 16" height="1em" width="1em">
+                                                <path
+                                                    d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25">
+                                                </path>
+                                            </svg>
+                                            <span class="star">-</span>
+                                        </div>
+                                        <div>
+                                            <svg fill="currentColor" viewBox="0 0 16 16" height="1em" width="1em">
+                                                <path
+                                                    d="M5 5.372a2.25 2.25 0 1 0-1.5 0v.878A2.25 2.25 0 0 0 5.75 8.5h1.5v2.128a2.251 2.251 0 1 0 1.5 0V8.5h1.5a2.25 2.25 0 0 0 2.25-2.25v-.878a2.25 2.25 0 1 0-1.5 0v.878a.75.75 0 0 1-.75.75h-4.5A.75.75 0 0 1 5 6.25v-.878">
+                                                </path>
+                                            </svg>
+                                            <span class="fork">-</span>
+                                        </div>
+                                        <div class="lang">
+                                            <div class="color" style="background-color: #f7931e;"></div>
+                                            HandleBars +
+                                            <div class="color" style="background-color: #F1E05A;"></div>
+                                            JS +
+                                            <div class="color" style="background-color: #C6538C;"></div>
+                                            SCSS
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </main>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ======================== GADGETS ====================== -->
+            <section class="gadgets section" id="gadgets">
+                <div class="container">
+                    <div class="row">
+                        <div class="section__title padd-15">
+                            <h2>Gadgets</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <main>
+                            <div class="widget">
+                                <div id="discord">
+                                    <div class="content">
+                                        <div class="icon">
+                                            <img src="" id="avatar" alt="avatar" draggable="false">
+                                        </div>
+                                        <div class="meta">
+                                            <b id="name"></b>
+                                            <p>
+                                                <span id="dot"></span>
+                                                <span id="status"></span>
+                                                <b id="activity"></b>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="rpc">
+                                        <div style="height: 2rem">
+                                            <div id="large_image"></div>
+                                            <div id="small_image"></div>
+                                        </div>
+                                        <div class="meta">
+                                            <div id="details"></div>
+                                            <div id="state"></div>
+                                            <div id="timestamp"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="widget">
+                                <div id="clock">
+                                    <div class="face">
+                                        <svg viewBox="0 0 500 500">
+                                            <path
+                                                d="M469.881,324.15a90.631,90.631,0,0,1,7.616-28.425l15.88-32.267c3.642-7.4,3.642-19.514,0-26.916L477.5,204.275a90.631,90.631,0,0,1-7.616-28.425L467.5,139.967c-.547-8.232-6.6-18.722-13.459-23.311l-29.885-20a90.643,90.643,0,0,1-20.809-20.809l-20-29.885C378.755,39.1,368.265,33.047,360.033,32.5L324.15,30.119A90.631,90.631,0,0,1,295.725,22.5L263.458,6.623c-7.4-3.642-19.514-3.642-26.916,0L204.275,22.5a90.631,90.631,0,0,1-28.425,7.616L139.967,32.5c-8.232.547-18.722,6.6-23.311,13.459l-20,29.885A90.643,90.643,0,0,1,75.844,96.653l-29.885,20C39.1,121.245,33.047,131.735,32.5,139.967L30.119,175.85A90.631,90.631,0,0,1,22.5,204.275L6.623,236.542c-3.642,7.4-3.642,19.514,0,26.916L22.5,295.725a90.631,90.631,0,0,1,7.616,28.425L32.5,360.033c.546,8.232,6.6,18.722,13.458,23.311l29.885,20a90.643,90.643,0,0,1,20.809,20.809l20,29.885c4.589,6.856,15.079,12.912,23.311,13.459l35.883,2.381a90.631,90.631,0,0,1,28.425,7.616l32.267,15.88c7.4,3.642,19.514,3.642,26.916,0l32.267-15.88a90.631,90.631,0,0,1,28.425-7.616l35.883-2.381c8.232-.547,18.722-6.6,23.311-13.459l20-29.885a90.643,90.643,0,0,1,20.809-20.809l29.885-20c6.856-4.589,12.912-15.079,13.458-23.311Z">
+                                            </path>
+                                        </svg>
+                                        <div id="hour-hand"></div>
+                                        <div id="minute-hand"></div>
+                                        <div id="second-hand"></div>
+                                    </div>
+                                    <div>
+                                        <div class="date">
+                                            <b id="date"></b>
+                                            <span>ICT</span>
+                                        </div>
+                                        <div class="time">
+                                            <span id="hour"></span><span>:</span><span
+                                                id="minute"></span><span>:</span><span id="second"></span>
+                                        </div>
+                                        <div>
+                                            <span id="timezone-diff"></span>
+                                            <span id="utc-offset"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </main>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ======================== CONTACT ====================== -->
+            <section class="contact section" id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="section__title padd-15">
+                            <h2>Contact</h2>
+                        </div>
+                    </div>
+                    <!-- ==================== ROW 1 ==================== -->
+                    <h3 class="contact__title padd-15">Contact Method</h3>
+                    <h4 class="contact__sub-title padd-15">Contact via Discord is preferred</h4>
+                    <div class="row" id="contact-links">
+                        <div class="contact__info-item padd-15">
+                            <a href="https://discord.com/users/344845849819348992" target="_blank" class="icon"><i
+                                    class="fa-brands fa-discord"></i>
+                                <h4>Discord</h4>
+                            </a>
+                        </div>
+                        <div class="contact__info-item padd-15">
+                            <a href="mailto:minhdlh.dev@gmail.com" target="_blank" class="icon"><i
+                                    class="fa-solid fa-envelope"></i>
+                                <h4>Email</h4>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- ==================== ROW 2 ==================== -->
+                    <h3 class="contact__title padd-15">Social Network</h3>
+                    <h4 class="contact__sub-title padd-15">I'd really appreciate it if you'd stop by and support me</h4>
+                    <div class="row" id="contact-links">
+                        <div class="contact__info-item padd-15">
+                            <a href="https://www.youtube.com/@hiezmusic" target="_blank" class="icon"><i
+                                    class="fa-brands fa-youtube"></i>
+                                <h4>Youtube</h4>
+                            </a>
+                        </div>
+                        <div class="contact__info-item padd-15">
+                            <a href="https://www.facebook.com/DoanLeHienMinh" target="_blank" class="icon"><i
+                                    class="fa-brands fa-facebook"></i>
+                                <h4>Facebook</h4>
+                        </div>
+                        <div class="contact__info-item padd-15">
+                            <a href="https://twitter.com/oan_fancy" target="_blank" class="icon"><i
+                                    class="fa-brands fa-x-twitter"></i>
+                                <h4>Twitter | X</h4>
+                            </a>
+                        </div>
+                        <div class="contact__info-item padd-15">
+                            <a href="https://github.com/HienMinh56" target="_blank" class="icon"><i
+                                    class="fa-brands fa-github"></i>
+                                <h4>Github</h4>
+                            </a>
+                        </div>
+                        <div class="contact__info-item padd-15">
+                            <a href="https://steamcommunity.com/id/Fancy56" target="_blank" class="icon"><i
+                                    class="fa-brands fa-steam"></i>
+                                <h4>Steam</h4>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- ==================== ROW 3 ==================== -->
+                    <h3 class="contact__title padd-15">Discord Server</h3>
+                    <h4 class="contact__sub-title padd-15">My discord Server</h4>
+                    <div class="row" id="contact-links">
+                        <div class="contact__info-item padd-15">
+                            <a href="https://discord.gg/akebi" target="_blank"><img
+                                    src="https://media.tenor.com/Hg4jUD7qrYMAAAAC/hack-the-planet-hacker-cat.gif"
+                                    style="width: 50px;height:50px;"></a> <!-- Default: 30px; 30px -->
+                            <h4>Dev Club</h4>
+                            <p>Discord Server Official </br> Code and Game</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ======================== INFO ========================= -->
+            <section class="info section" id="info">
+                <div class="container">
+                    <div class="row">
+                        <div class="section__title padd-15">
+                            <h2>Page Info</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="page__content padd-15">
+                            <div class="row">
+                                <div class="page__text padd-15">
+                                    <h3>Sincere thanks to <span>Yen Van La</span> and <span>Takeshi</span></h3>
+                                    <p>Website designed by Yen Van La.</p>
+                                    <p>Code contributed by Takeshi and remake by Fancy.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="supporter__info padd-15">
+                                    <div class="row" style="display: none;">
+                                        <a href="https://github.com/takeshi7502" target="_blank">
+                                            <img src="https://avatars.githubusercontent.com/u/107123061?v=4"
+                                                alt="avatar">
+                                            <h1 class="rainbow-text">Takeshi7502</h1>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="skills padd-15">
+                                    <div class="row">
+                                        <div class="skill__item padd-15">
+                                            <h5>HTML</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 41%;"></div>
+                                                <div class="skill-percent">41%</div>
+                                            </div>
+                                        </div>
+                                        <div class="skill__item padd-15">
+                                            <h5>CSS</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 39%;"></div>
+                                                <div class="skill-percent">39%</div>
+                                            </div>
+                                        </div>
+                                        <div class="skill__item padd-15">
+                                            <h5>JavaScript</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 20%;"></div>
+                                                <div class="skill-percent">20%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <!-- ===================== COLOR CHANGER ==================== -->
+    <div class="style__switcher">
+        <div class="style__switcher-toggler s-icon">
+            <i class="fas fa-cog"></i>
+        </div>
+        <div class="day-night s-icon">
+            <i class="fas fa-moon"></i> <!-- ADD THIS TO MAKE THE ICON SPIN: fa-spin -->
+        </div>
+        <h4>Màu Chủ Đề</h4>
+        <div class="colors">
+            <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+            <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+            <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+            <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+            <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+        </div>
+    </div>
+
+    <!-- ============== Messenger Plugin chat Code ============== -->
+    <div id="fb-root"></div>
+
+    <!-- ================= Your Plugin chat code ================ -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <!-- ======================= Import JS ====================== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        referrerpolicy="no-referrer"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10/dist/sweetalert2.min.js"></script>
+    <script src="https://kit.fontawesome.com/3426ec3618.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+        referrerpolicy="no-referrer"></script>
+    <!-- ========================== JS ========================== -->
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/style-switcher.js"></script>
+    <script src="assets/js/facebook.js"></script>
+    <script defer src="assets/js/index.js"></script>
+    <script src="https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js"></script>
+</body>
+
+</html>
