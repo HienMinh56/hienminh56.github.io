@@ -41,6 +41,7 @@ const map = new Map();
     const ActivityType = ['Playing', 'Streaming to', 'Listening to', 'Watching', 'Custom status', 'Competing in'];
     const StatusColor = { online: '#4b8', idle: '#fa1', dnd: '#f44', offline: '#778' };
     const ws = new WebSocket('wss://api.lanyard.rest/socket');
+    const img = document.getElementById("avatar");
 
     ws.addEventListener('open', () => ws.send(JSON.stringify({ op: 2, d: { subscribe_to_id: '344845849819348992' } })));
     ws.addEventListener('error', () => ws.close());
@@ -50,7 +51,10 @@ const map = new Map();
         const { t, d } = JSON.parse(data);
         if (t !== 'INIT_STATE' && t !== 'PRESENCE_UPDATE') return;
 
-        document.getElementById("avatar").src = "https://cdn.discordapp.com/avatars/" + d.discord_user.id + "/" + d.discord_user.avatar + ".png";
+        img.src = "https://cdn.discordapp.com/avatars/" + d.discord_user.id + "/" + d.discord_user.avatar + ".gif";
+        img.onerror = function () {
+            this.src = this.src.replace(".gif", ".png");
+        };
         update('#name', d.discord_user.display_name);
         update('#dot', StatusColor[d.discord_status]);
 
