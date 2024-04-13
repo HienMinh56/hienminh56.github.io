@@ -1024,6 +1024,7 @@ h3.my-profession {
     transition: transform .2s linear, background-color .2s linear;
     border-radius: 24px;
     background: var(--text-black-900);
+    min-height: 180px;
 }
 
 .widget:hover {
